@@ -42,7 +42,7 @@ Retail companies often operate with disconnected systems, leading to:
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="docs/architecture.png" width="80%">
+  <img src="docs/Architecture_Diagram.png" width="80%">
 </p>
 
 
@@ -51,7 +51,7 @@ Retail companies often operate with disconnected systems, leading to:
 ## 🧱 Data Model
 
 <p align="center">
-  <img src="docs/er_diagram.png" width="80%">
+  <img src="docs/ER_Diagram.png" width="80%">
 </p>
 
 ### ⭐ Star Schema Design

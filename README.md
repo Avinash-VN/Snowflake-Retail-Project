@@ -42,7 +42,7 @@ Retail companies often operate with disconnected systems, leading to:
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="docs/Architecture_Diagram.png" width="80%">
+  <img src="docs/ArchitectureDiagram.png" width="80%">
 </p>
 
 

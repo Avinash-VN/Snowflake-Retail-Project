@@ -51,7 +51,7 @@ Retail companies often operate with disconnected systems, leading to:
 ## 🧱 Data Model
 
 <p align="center">
-  <img src="docs/ER_Diagram.png" width="80%">
+  <img src="docs/ERDiagram.png" width="80%">
 </p>
 
 ### ⭐ Star Schema Design

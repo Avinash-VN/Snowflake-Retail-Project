@@ -1,0 +1,45 @@
+use warehouse RETAIL_PROJECT;
+Use database retail_intelligence_db;
+use schema MART;
+
+Create or replace procedure date_update()
+returns STRING
+language SQL
+EXECUTE AS CALLER
+AS
+$$
+BEGIN
+
+INSERT OVERWRITE INTO RETAIL_INTELLIGENCE_DB.MART.DIM_DATE
+
+WITH ALL_DATES AS (
+    SELECT TRANSACTION_DATE AS DATE
+    FROM RETAIL_INTELLIGENCE_DB.MART.FACT_SALES
+    WHERE TRANSACTION_DATE IS NOT NULL
+
+    UNION
+
+    SELECT SNAPSHOT_DATE AS DATE
+    FROM RETAIL_INTELLIGENCE_DB.MART.FACT_INVENTORY_DAILY
+    WHERE SNAPSHOT_DATE IS NOT NULL
+)
+SELECT DISTINCT
+    DATE,
+    YEAR(DATE)                      AS YEAR_NUM,
+    QUARTER(DATE)                   AS QUARTER_NUM,
+    MONTH(DATE)                     AS MONTH_NUM,
+    TO_VARCHAR(DATE, 'MON')         AS MONTH_NAME,
+    WEEK(DATE)                      AS WEEK_NUM,
+    DAY(DATE)                       AS DAY_OF_MONTH,
+    DAYOFWEEK(DATE)                 AS DAY_OF_WEEK,
+    TO_VARCHAR(DATE, 'DAY')         AS DAY_NAME
+FROM ALL_DATES
+ORDER BY DATE;
+
+Return 'Date Updated';
+
+END;
+$$;
+
+
+call date_update();

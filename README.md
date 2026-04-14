@@ -120,7 +120,9 @@ Created analytical views:
 💡 These enable:
 - Sales trend analysis  
 - Inventory monitoring  
-- Reorder decision-making  
+- Reorder decision-making
+
+💡 Integrated Snowflake with Power BI and validated successful connectivity by building dashboards on curated mart-layer data.
 
 ---
 

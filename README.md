@@ -224,7 +224,7 @@ This solution enables:
 
 - Add forecasting model (ML-based demand prediction)  
 - Implement Streams for incremental processing   
-- Build a real-time dashboard  
+- Implement Email alters using snowflake system function
 
 ---
 

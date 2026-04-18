@@ -3,3 +3,7 @@
 {"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019da2ad-e148-70d1-8ae7-ae7eccdd1a81","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":32356,"thread":"tokio-rt-worker","ts":"2026-04-18T22:19:57.705589Z"}}
 {"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019da2ad-e148-70d1-8ae7-ae7eccdd1a81","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":32356,"thread":"tokio-rt-worker","ts":"2026-04-18T22:19:57.707068Z"}}
 {"data":{"completed_at":"2026-04-18T22:19:58.264768Z","elapsed":0.5865479707717896,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019da2ad-e148-70d1-8ae7-ae7eccdd1a81","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [586ms]","name":"CommandCompleted","pid":32356,"thread":"tokio-rt-worker","ts":"2026-04-18T22:19:58.266457Z"}}
+==================== 2026-04-18T22:21:20.587125Z | 019da2af-2534-7712-a733-65e4bb09f192 ====================
+22:21:54.247625 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully [33.7s]

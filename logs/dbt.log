@@ -102,3 +102,27 @@ select 1 as id
 04:31:18.445354 [info ]: 
 ==================== Execution Summary =====================
 Finished 'debug' successfully for target 'dev' [2.4s]
+==================== 2026-04-19T04:41:18.407904Z | 019da40b-0344-7d72-adeb-1f331c921376 ====================
+04:41:18.408058 [info ]: dbt-fusion 2.0.0-preview.172
+04:41:18.408713 [info ]: Started loading project
+04:41:18.414190 [info ]: Loading ~/.dbt/profiles.yml
+04:41:18.424589 [debug]:    Started loading packages
+04:41:18.432528 [debug]:     Loaded [  0.01s] packages
+04:41:18.433550 [info ]: Finished loading project [  0.02s]
+04:41:18.439170 [info ]: Started parsing
+04:41:18.476485 [debug]: Finished parsing models\example\schema.yml [  0.00s]
+04:41:18.497018 [debug]: Finished parsing models\example\my_first_dbt_model.sql [  0.01s]
+04:41:18.498134 [debug]: Finished parsing models\example\my_second_dbt_model.sql [  0.00s]
+04:41:18.514758 [debug]: Finished parsing target\generic_tests\unique_my_first_dbt_model_id.sql [  0.01s]
+04:41:18.515570 [debug]: Finished parsing target\generic_tests\not_null_my_first_dbt_model_id.sql [  0.00s]
+04:41:18.516185 [debug]: Finished parsing target\generic_tests\unique_my_second_dbt_model_id.sql [  0.00s]
+04:41:18.516820 [debug]: Finished parsing target\generic_tests\not_null_my_second_dbt_model_id.sql [  0.00s]
+04:41:18.521222 [info ]: Finished parsing [  0.08s]
+04:41:18.524736 [info ]: Started scheduling
+04:41:18.525980 [info ]: Finished scheduling [  0.00s]
+04:41:18.526275 [warn ]: dbt1600: The selection criterion 'fqn:Test_model' does not match any enabled nodes
+04:41:18.526307 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+04:41:18.921941 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+04:41:19.196119 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 warnings for target 'dev' [788ms]

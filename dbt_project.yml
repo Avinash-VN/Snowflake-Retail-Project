@@ -9,7 +9,7 @@ dbt-cloud:
     project-id: 70471823576542
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'jaffle_shop'  # see the profiles.yml file for more details
+profile: 'default'  # see the profiles.yml file for more details
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be

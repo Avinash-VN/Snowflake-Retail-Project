@@ -7,3 +7,98 @@
 22:21:54.247625 [info ]: 
 ==================== Execution Summary =====================
 Finished 'init' successfully [33.7s]
+{"data":{"log_version":3,"version":"=2.0.0-preview.172"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019da3c3-d43b-7bb3-b72f-b3f2f1950c87","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.172","name":"MainReportVersion","pid":24588,"thread":"tokio-rt-worker","ts":"2026-04-19T03:23:33.339977Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\avina\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019da3c3-d43b-7bb3-b72f-b3f2f1950c87","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":24588,"thread":"tokio-rt-worker","ts":"2026-04-19T03:23:33.340178Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019da3c3-d43b-7bb3-b72f-b3f2f1950c87","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":24588,"thread":"tokio-rt-worker","ts":"2026-04-19T03:23:33.348028Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019da3c3-d43b-7bb3-b72f-b3f2f1950c87","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":24588,"thread":"tokio-rt-worker","ts":"2026-04-19T03:23:33.349618Z"}}
+{"data":{"completed_at":"2026-04-19T03:23:33.855981Z","elapsed":0.5190432667732239,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019da3c3-d43b-7bb3-b72f-b3f2f1950c87","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [519ms]","name":"CommandCompleted","pid":24588,"thread":"tokio-rt-worker","ts":"2026-04-19T03:23:33.857538Z"}}
+==================== 2026-04-19T04:27:03.080477Z | 019da3fd-f622-7fb3-ac07-d83c9e6f5288 ====================
+04:27:03.080678 [info ]: dbt-fusion 2.0.0-preview.172
+04:27:03.083531 [info ]: Started loading project
+04:27:03.098618 [info ]: Loading ~/.dbt/profiles.yml
+04:27:03.102322 [info ]: Finished loading project [  0.02s]
+04:27:03.103263 [info ]: Started debugging
+04:27:03.103695 [info ]: Debugging profile: dev
+04:27:03.103929 [info ]: Debugging dbt version: 2.0.0-preview.172
+04:27:03.104534 [info ]: Debugging platform: windows x86_64 (windows)
+04:27:03.104714 [info ]: Debugging adapter type: snowflake (remote)
+04:27:03.142717 [info ]: Debugging dependencies:
+  git: OK
+04:27:03.143865 [info ]: Debugging connection:
+  "account": "BKWRNES-FB88925",
+  "user": "AVINASHVN",
+  "database": "RETAIL_INTELLIGENCE_DB",
+  "warehouse": "RETAIL_PROJECT",
+  "schema": "dbt_staging",
+  "role": "account admin"
+04:27:04.613920 [info ]: Finished debugging [  1.51s]
+04:27:04.614846 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+04:27:04.969680 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+04:27:05.025579 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error for target 'dev' [1.9s]
+==================== 2026-04-19T04:29:01.187667Z | 019da3ff-c37f-7c52-8791-abfa9e922610 ====================
+04:29:01.187806 [info ]: dbt-fusion 2.0.0-preview.172
+04:29:01.188558 [info ]: Started loading project
+04:29:01.192691 [info ]: Loading ~/.dbt/profiles.yml
+04:29:01.203959 [info ]: Finished loading project [  0.02s]
+04:29:01.204399 [info ]: Started debugging
+04:29:01.204762 [info ]: Debugging profile: dev
+04:29:01.205184 [info ]: Debugging dbt version: 2.0.0-preview.172
+04:29:01.205336 [info ]: Debugging platform: windows x86_64 (windows)
+04:29:01.205515 [info ]: Debugging adapter type: snowflake (remote)
+04:29:01.241545 [info ]: Debugging dependencies:
+  git: OK
+04:29:01.242053 [info ]: Debugging connection:
+  "account": "BKWRNES-FB88925",
+  "user": "AVINASHVN",
+  "database": "RETAIL_INTELLIGENCE_DB",
+  "warehouse": "RETAIL_PROJECT",
+  "schema": "dbt_staging",
+  "role": "account admin"
+04:29:02.577104 [info ]: Finished debugging [  1.37s]
+04:29:02.577490 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390189 (08004): Role 'ACCOUNT ADMIN' specified in the connect string does not exist or not authorized. Contact your local system administrator, or attempt to login with another role, e.g. PUBLIC.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+04:29:02.958856 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+04:29:03.007452 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error for target 'dev' [1.8s]
+==================== 2026-04-19T04:31:16.068683Z | 019da401-d261-7592-a155-a72ca4b99d27 ====================
+04:31:16.068797 [info ]: dbt-fusion 2.0.0-preview.172
+04:31:16.069202 [info ]: Started loading project
+04:31:16.072936 [info ]: Loading ~/.dbt/profiles.yml
+04:31:16.073845 [info ]: Finished loading project [  0.00s]
+04:31:16.074111 [info ]: Started debugging
+04:31:16.074277 [info ]: Debugging profile: dev
+04:31:16.074440 [info ]: Debugging dbt version: 2.0.0-preview.172
+04:31:16.074645 [info ]: Debugging platform: windows x86_64 (windows)
+04:31:16.074827 [info ]: Debugging adapter type: snowflake (remote)
+04:31:16.110208 [info ]: Debugging dependencies:
+  git: OK
+04:31:16.110455 [info ]: Debugging connection:
+  "account": "BKWRNES-FB88925",
+  "user": "AVINASHVN",
+  "database": "RETAIL_INTELLIGENCE_DB",
+  "warehouse": "RETAIL_PROJECT",
+  "schema": "dbt_staging",
+  "role": "accountadmin"
+04:31:17.928523 [debug]: Query executed on node unknown:
+select 1 as id
+04:31:17.931400 [info ]: Debugging connection test: OK
+04:31:17.932226 [info ]: Debugged All checks passed!
+04:31:17.933418 [info ]: Finished debugging [  1.86s]
+04:31:18.352455 [info ]: New version available 2.0.0-preview.173 (run `dbt system update`)
+04:31:18.445354 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [2.4s]
